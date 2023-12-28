@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIVO - Revolutionizing Fortnite</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set a modern font family */
+    body {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Add a gradient overlay to the background */
+    body:before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('fortnite-background.gif');
+      background-size: cover;
+      background-blend-mode: overlay;
+      z-index: -2;
+      opacity: 0.6;
+      animation: animateBackground 60s linear infinite;
+    }
+
+    @keyframes animateBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    /* Add a container to center the content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Add some styling to the header */
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: transparent;
+      position: relative;
+      z-index: 2;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #ddd;
+    }
+
+    /* Add a card-like design to the main content */
+    main {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #7b2cbf;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      color: #ddd;
+      transition: color 0.3s ease-in-out;
+    }
+
+    /* Add hover effect to features */
+    ul li:hover {
+      color: #ffcc00; /* Yellow color on hover */
+    }
+
+    /* Add responsive styles for smaller screens */
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 30px 20px;
+      }
+
+      header h1 {
+        font-size: 3rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      header {
+        padding: 20px 20px;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>QUIVO</h1>
+    <p>Revolutionizing Fortnite</p>
+  </header>
+
+  <div class="container">
+    <main>
+      <h2>About</h2>
+      <p>Welcome to QUIVO, where innovation meets gaming.</p>
+
+      <h2>Features</h2>
+      <ul>
+        <li>🚀 Responsive layout</li>
+        <li>🎨 Easy to customize</li>
+        <li>💻 Clean and modern design</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>If you have any questions, feel free to contact us.</p>
+      <p>Email: <a href="mailto:info@quivo.com" style="color: #7b2cbf;">info@quivo.com</a></p>
+    </main>
+  </div>
+</body>
+
+</html>
