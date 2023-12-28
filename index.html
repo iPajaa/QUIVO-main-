@@ -23,28 +23,29 @@
       overflow-x: hidden;
     }
 
-    /* Add a gradient overlay to the background */
-    body:before {
+    /* Add a dynamic background with a subtle parallax effect */
+    body::before {
       content: "";
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: url(');
+      background-image: url('fortnite-background.gif');
       background-size: cover;
-      background-blend-mode: overlay;
+      background-position: 50% 0;
+      transform: translateZ(0);
       z-index: -2;
-      opacity: 0.6;
+      opacity: 0.4;
       animation: animateBackground 60s linear infinite;
     }
 
     @keyframes animateBackground {
       0% {
-        background-position: 0 0;
+        background-position: 50% 0;
       }
       100% {
-        background-position: 200% 0;
+        background-position: 50% 100%;
       }
     }
 
@@ -57,31 +58,7 @@
       z-index: 1;
     }
 
-    /* Add some styling to the header */
-    header {
-      padding: 40px 20px;
-      text-align: center;
-      background-color: transparent;
-      position: relative;
-      z-index: 2;
-      transition: background-color 0.5s ease-in-out;
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      margin-bottom: 15px;
-      color: #fff;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 15px;
-      color: #ddd;
-    }
-
-    /* Add a card-like design to the main content */
+    /* Add a stylish card design to the main content */
     main {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -112,6 +89,34 @@
     /* Add hover effect to features */
     ul li:hover {
       color: #ffcc00; /* Yellow color on hover */
+    }
+
+    /* Add a cool gradient to the header with transition on hover */
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(45deg, #4a176d, #7b2cbf);
+      position: relative;
+      z-index: 2;
+      transition: background 0.5s ease-in-out;
+    }
+
+    header:hover {
+      background: linear-gradient(45deg, #7b2cbf, #4a176d);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #ddd;
     }
 
     /* Add responsive styles for smaller screens */
